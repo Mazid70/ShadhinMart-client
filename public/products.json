@@ -1,0 +1,92 @@
+[
+  {
+    "productName": "Wireless Earbuds",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "High-quality wireless earbuds with noise cancellation and ergonomic fit.",
+    "price": 59.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "createdAt": "2024-08-14T10:00:00Z"
+  },
+  {
+    "productName": "Gaming Laptop",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Powerful gaming laptop with the latest graphics and customizable RGB keyboard.",
+    "price": 1299.99,
+    "category": "Electronics",
+    "ratings": 4.8,
+    "createdAt": "2024-08-14T11:00:00Z"
+  },
+  {
+    "productName": "Smartwatch",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Stylish smartwatch with heart rate monitor, GPS, and notifications.",
+    "price": 199.99,
+    "category": "Wearables",
+    "ratings": 4.3,
+    "createdAt": "2024-08-14T12:00:00Z"
+  },
+  {
+    "productName": "Bluetooth Speaker",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Portable Bluetooth speaker with powerful bass and long battery life.",
+    "price": 79.99,
+    "category": "Audio",
+    "ratings": 4.6,
+    "createdAt": "2024-08-14T13:00:00Z"
+  },
+  {
+    "productName": "4K Smart TV",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Stunning 4K Smart TV with ultra-high-definition resolution and smart features.",
+    "price": 899.99,
+    "category": "Home Entertainment",
+    "ratings": 4.7,
+    "createdAt": "2024-08-14T14:00:00Z"
+  },
+  {
+    "productName": "Fitness Tracker",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Advanced fitness tracker with heart rate monitor and sleep tracking.",
+    "price": 49.99,
+    "category": "Wearables",
+    "ratings": 4.2,
+    "createdAt": "2024-08-14T15:00:00Z"
+  },
+  {
+    "productName": "Noise-Cancelling Headphones",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Comfortable noise-cancelling headphones for superior sound quality.",
+    "price": 249.99,
+    "category": "Audio",
+    "ratings": 4.9,
+    "createdAt": "2024-08-14T16:00:00Z"
+  },
+  {
+    "productName": "Smartphone",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Cutting-edge smartphone with advanced camera and long-lasting battery.",
+    "price": 999.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "createdAt": "2024-08-14T17:00:00Z"
+  },
+  {
+    "productName": "Tablet",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Versatile tablet with vibrant display and powerful performance.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "createdAt": "2024-08-14T18:00:00Z"
+  },
+  {
+    "productName": "Wireless Charger",
+    "productImage": "https://png.pngtree.com/png-clipart/20230508/original/pngtree-airpods-png-image_9149137.png",
+    "description": "Fast wireless charger for smartphones, smartwatches, and earbuds.",
+    "price": 29.99,
+    "category": "Accessories",
+    "ratings": 3.5,
+    "createdAt": "2024-08-14T19:00:00Z"
+  }
+]
