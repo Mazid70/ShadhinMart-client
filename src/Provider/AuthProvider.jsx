@@ -9,7 +9,6 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 import app from "../Firebase/Firebase.config";
 
@@ -75,7 +74,4 @@ const AuthProvider = ({ children }) => {
   );
 };
 
-AuthProvider.propTypes = {
-  children: PropTypes.node,
-};
 export default AuthProvider;

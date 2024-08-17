@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 import { AuthContext } from '../Provider/AuthProvider';
 const SignIn = () => {
   const [visible, setVisible] = useState(true);
-  const { googleSignIn, githubSignIn, signIn } = useContext(AuthContext);
+  const { googleSingUp, githubSingUp, signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const togglePassword = () => {
@@ -17,7 +17,7 @@ const SignIn = () => {
   };
 
   const signInGoogle = () => {
-    googleSignIn()
+    googleSingUp ()
       .then(() => {
         Swal.fire({
           title: 'Good job!',
@@ -35,7 +35,7 @@ const SignIn = () => {
       });
   };
   const signInGithub = () => {
-    githubSignIn()
+    githubSingUp()
       .then(() => {
         setTimeout(() => {
           Swal.fire({
