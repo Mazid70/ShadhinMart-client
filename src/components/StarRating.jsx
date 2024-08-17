@@ -10,7 +10,6 @@ const StarRating = ({ rating }) => {
     } else setStars(rating);
   }, [rating]);
 
-  console.log(stars);
   const totalStar = [...Array(stars).keys()];
   return (
     <div className="flex items-center my-2">

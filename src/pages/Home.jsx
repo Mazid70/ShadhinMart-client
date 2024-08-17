@@ -13,6 +13,7 @@ const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [search, setSearch] = useState('');
   const [isloading, setLoading] = useState(true);
+  const[hidden,setHidden]=useState(true)
   const item = 8;
   const handleSearch = e => {
     e.preventDefault();
@@ -36,7 +37,7 @@ const Home = () => {
   return (
     <main className="bg-[#F5F5F5]">
       {/* navbar  */}
-      <Navbar setSearch={setSearch} handleSearch={handleSearch} />
+      <Navbar setSearch={setSearch} handleSearch={handleSearch} hidden={hidden} setHidden={setHidden}/>
       <section className="flex ">
         {/* sidebar  */}
         <Sidebar />

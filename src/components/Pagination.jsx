@@ -11,7 +11,6 @@ const Pagination = ({ pages, currentPage, setCurrentPage }) => {
       setCurrentPage(currentPage + 1);
     }
   };
-  console.log(pages);
   return (
     <div>
       <button
