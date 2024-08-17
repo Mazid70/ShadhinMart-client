@@ -14,6 +14,7 @@ const Home = () => {
   const [search, setSearch] = useState('');
   const[hidden,setHidden]=useState(true);
   const [isLoading, setLoading] = useState(true);
+  const [isOpen,setOpen]=useState(false)
   const [filters, setFilters] = useState({
     minPrice: 0,
     maxPrice: 1000,
@@ -73,10 +74,10 @@ const Home = () => {
   return (
     <main className="bg-[#F5F5F5]">
       {/* navbar  */}
-      <Navbar setSearch={setSearch} handleSearch={handleSearch} hidden={hidden} setHidden={setHidden}/>
+      <Navbar setSearch={setSearch} handleSearch={handleSearch} hidden={hidden} setHidden={setHidden} isOpen={isOpen} setOpen={setOpen}/>
       <section className="flex">
         {/* sidebar  */}
-        <Sidebar onFilter={handleFilterChange} />
+        <Sidebar onFilter={handleFilterChange} isOpen={isOpen} setOpen={setOpen}/>
         {/* ProductCard  */}
         <div className="flex-1 relative">
           <select
@@ -94,7 +95,7 @@ const Home = () => {
               <span className="loading loading-lg loading-spinner text-info"></span>
             </div>
           ) : (
-            <div className="grid grid-cols-4 gap-5 p-10 mt-20">
+            <div className="grid lg:grid-cols-4 gap-5 p-10 mt-20">
               {data.map(d => (
                 <ProductCard key={d._id} d={d} />
               ))}
