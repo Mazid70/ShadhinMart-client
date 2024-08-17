@@ -10,6 +10,7 @@ const ProductCard = ({ d }) => {
       <div>
         <h1 className="font-bold text-xl">{d.productName}</h1>
         <h1 className="text-gray-400 ">{d.description}</h1>
+        <h1 className="font-bold text-lg mt-2">{d.brand}</h1>
         <StarRating rating={d.ratings} />
         <div className="flex justify-between w-full items-center">
           <h1 className="text-gray-400 font-semibold">{d.category}</h1>
