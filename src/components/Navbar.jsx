@@ -8,7 +8,7 @@ const Navbar = ({ handleSearch, setSearch, hidden, setHidden ,isOpen,setOpen}) =
   };
   console.log(hidden);
   return (
-    <nav className="bg-white h-16 w-full fixed rounded-xl z-20 flex items-center">
+    <nav className="bg-white h-16 w-full fixed rounded-xl z-20 flex items-center shadow-md">
       <div className="container mx-auto flex items-center ">
       <MdOutlineMenu onClick={()=>{setOpen(!isOpen)}} className='lg:hidden text-2xl ml-5' />
         <h1 class="text-3xl hidden lg:block font-extrabold bg-gradient-to-r from-red-600  to-green-400 text-transparent bg-clip-text">
