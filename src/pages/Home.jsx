@@ -4,6 +4,7 @@ import useAxiosPublic from '../CustomHooks/useAxiosPublic';
 import Pagination from '../components/Pagination';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const axiosPublic = useAxiosPublic();
@@ -28,6 +29,7 @@ const Home = () => {
     const form = e.target;
     setSearch(form.search.value);
     form.search.value = '';
+    document.querySelector('html').setAttribute("data-theme", "dark")
   };
 
   const handleFilterChange = (newFilters) => {
@@ -112,6 +114,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
