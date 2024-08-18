@@ -1,27 +1,27 @@
-Shadhin Mart
+Shadhin Mart <br>
 [LiveSite](https://shadhinmart.netlify.app)
-Overview
-This is a MERN stack Single Page Application for browsing and managing products with features like pagination, search, categorization, and sorting. Authentication is handled through Firebase.
+Overview <br>
+This is a MERN stack Single Page Application for browsing and managing products with features like pagination, search, categorization, and sorting. Authentication is handled through Firebase. <br>
 
-Features
-Pagination: Browse products with Next/Previous buttons.
-Search: Search by product name.
-Categorization: Filter by brand, category, and price range.
-Sorting: Sort by price or date added.
-Authentication: Google and Email/Password login with Firebase.
-Responsive Design: Optimized for all devices.
-Setup
-Backend
-Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-server>.
-Install dependencies: npm install.
-Set up .env with MONGO_URI and PORT.
-Start server: npm start.
-Frontend
-Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-client>.
-Install dependencies: npm install.
-Set up .env with REACT_APP_API_URL and Firebase config.
-Start the app: npm start.
-Usage
-Access the app at http://localhost:9000.
-Search, filter, and sort products as needed.
+Features <br>
+Pagination: Browse products with Next/Previous buttons. <br>
+Search: Search by product name.<br>
+Categorization: Filter by brand, category, and price range.<br>
+Sorting: Sort by price or date added.<br>
+Authentication: Google and Email/Password login with Firebase.<br>
+Responsive Design: Optimized for all devices.<br>
+Setup<br>
+Backend<br>
+Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-server>.<br>
+Install dependencies: npm install.<br>
+Set up .env with MONGO_URI and PORT.<br>
+Start server: npm start.<br>
+Frontend<br>
+Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-client>.<br>
+Install dependencies: npm install.<br>
+Set up .env with REACT_APP_API_URL and Firebase config.<br>
+Start the app: npm start.<br>
+Usage<br>
+Access the app at http://localhost:9000.<br>
+Search, filter, and sort products as needed.<br>
 Sign in via Google or Email/Password.
