@@ -1,8 +1,27 @@
-# React + Vite
+Shadhin Mart
+[LiveSite](https://shadhinmart.netlify.app)
+Overview
+This is a MERN stack Single Page Application for browsing and managing products with features like pagination, search, categorization, and sorting. Authentication is handled through Firebase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features
+Pagination: Browse products with Next/Previous buttons.
+Search: Search by product name.
+Categorization: Filter by brand, category, and price range.
+Sorting: Sort by price or date added.
+Authentication: Google and Email/Password login with Firebase.
+Responsive Design: Optimized for all devices.
+Setup
+Backend
+Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-server>.
+Install dependencies: npm install.
+Set up .env with MONGO_URI and PORT.
+Start server: npm start.
+Frontend
+Clone the repo: git clone <https://github.com/Mazid70/ShadhinMart-client>.
+Install dependencies: npm install.
+Set up .env with REACT_APP_API_URL and Firebase config.
+Start the app: npm start.
+Usage
+Access the app at http://localhost:9000.
+Search, filter, and sort products as needed.
+Sign in via Google or Email/Password.

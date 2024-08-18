@@ -38,19 +38,19 @@ const Navbar = ({
   }, [theme]);
 
   return (
-    <nav className="bg-white h-16 w-full fixed z-20 flex items-center shadow-md dark:bg-black">
+    <nav className="bg-white h-16 w-full fixed z-20 flex items-center shadow-md dark:bg-black px-5 lg:px-0">
       <div className="container mx-auto flex items-center justify-between">
         <MdOutlineMenu
           onClick={() => {
             setOpen(!isOpen);
           }}
-          className="lg:hidden text-2xl ml-5"
+          className="lg:hidden text-2xl "
         />
         <h1 className="text-3xl hidden lg:block font-extrabold bg-gradient-to-r from-red-600 to-green-400 text-transparent bg-clip-text">
           Shadhin Mart
         </h1>
         <form onSubmit={handleSearch} className="flex justify-center mx-auto">
-          <div className="bg-[#f0efef] lg:w-[300px] h-9 rounded relative">
+          <div className="bg-[#f0efef] w-40 lg:w-[300px] h-9 rounded relative">
             <input
               type="text"
               className="bg-transparent w-full h-full pl-10"
@@ -105,10 +105,10 @@ const Navbar = ({
             </ul>
           </div>
         ) : (
-          <Link to="/signin">Sign In</Link>
+          <Link to="/signin" className='font-semibold'>Sign In</Link>
         )}
 
-        <label className="flex cursor-pointer gap-2 ml-3">
+        <label className="hidden lg:flex cursor-pointer gap-2 ml-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

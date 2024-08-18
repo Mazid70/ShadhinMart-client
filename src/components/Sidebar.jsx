@@ -41,7 +41,7 @@ const Sidebar = ({ onFilter, isOpen, setOpen }) => {
 
   return (
     <section
-      className={`z-50 lg:z-0 fixed min-h-screen  lg:relative top-0 left-0 w-72  bg-white   border-2  transition-transform transform ${
+      className={`z-50 lg:z-0 fixed min-h-screen dark:bg-[#0A101A]   lg:relative top-0 left-0 w-72  bg-white   border-2  transition-transform transform ${
         isOpen ? 'translate-x-0' : '-translate-x-full '
       } lg:translate-x-0 lg:w-72 lg:static lg:border-0 lg:bg-transparent  lg:px-3 lg:pt-6 lg:mt-24 `}
     >
