@@ -17,7 +17,7 @@ const SignIn = () => {
   };
 
   const signInGoogle = () => {
-    googleSingUp ()
+    googleSingUp()
       .then(() => {
         Swal.fire({
           title: 'Good job!',

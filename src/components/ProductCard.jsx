@@ -3,7 +3,7 @@ import StarRating from './StarRating';
 
 const ProductCard = ({ d }) => {
   return (
-    <div className="bg-white p-5 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-xl transition-transform z-10 ">
+    <div className="bg-white p-5 hover:-translate-y-2 hover:-translate-x-2 hover:shadow-xl transition-transform z-10 dark:bg-[#0A101A] dark:border-2 dark:border-white">
       <div className="flex justify-center">
         <img src={d.productImage} className="h-56" />
       </div>

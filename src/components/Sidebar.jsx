@@ -41,11 +41,11 @@ const Sidebar = ({ onFilter, isOpen, setOpen }) => {
 
   return (
     <section
-      className={` z-50 lg:z-0 fixed min-h-screen  lg:relative top-0 left-0 w-72  bg-white border-2  transition-transform transform ${
+      className={`z-50 lg:z-0 fixed min-h-screen  lg:relative top-0 left-0 w-72  bg-white   border-2  transition-transform transform ${
         isOpen ? 'translate-x-0' : '-translate-x-full '
       } lg:translate-x-0 lg:w-72 lg:static lg:border-0 lg:bg-transparent  lg:px-3 lg:pt-6 lg:mt-24 `}
     >
-      <div className="lg:border-2 bg-white h-full w-full p-2">
+      <div className="lg:border-2 bg-white dark:bg-[#0A101A]  h-full w-full p-2">
         <form onSubmit={applyFilters}>
           <div className="flex w-full justify-between items-center">
             <h1 className="font-bold text-xl">Filter</h1>
@@ -60,7 +60,7 @@ const Sidebar = ({ onFilter, isOpen, setOpen }) => {
           {/* Price Range */}
           <h2 className="text-lg mt-3 font-bold">Price Range</h2>
           <div className="w-full">
-            <div className="flex items-center mb-2">
+            <div className="flex items-center mb-2 dark:text-black">
               <input
                 type="number"
                 className="w-1/2 px-2 py-1 border rounded"

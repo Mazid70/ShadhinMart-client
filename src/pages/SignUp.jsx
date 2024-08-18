@@ -7,9 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Provider/AuthProvider';
 
-
 const SignUp = () => {
- 
   const [visible, setVisible] = useState(true);
   const togglePassword = () => {
     setVisible(!visible);
@@ -29,18 +27,15 @@ const SignUp = () => {
     createUser(email, password)
       .then(result => {
         updateUser(name, image, phone);
-        console.log(result.user)
-
+        console.log(result.user);
 
         if (result.user) {
-         
           Swal.fire({
             title: 'Good job!',
             text: 'Sign Up Success',
             icon: 'success',
           });
           navigate(onform);
-        
         }
       })
       .catch(error => {
@@ -54,7 +49,7 @@ const SignUp = () => {
   };
   return (
     <section className="min-h-[100vh]  flex items-center justify-center w-full">
-       <div className="container mx-auto flex  justify-center ">
+      <div className="container mx-auto flex  justify-center ">
         <div className=" bg-[#E3F2FD] lg:w-[32%] p-10 rounded-lg">
           <h1 className="font-bold text-3xl text-center mb-5">Sign Up</h1>
           <form onSubmit={handleSignUp}>

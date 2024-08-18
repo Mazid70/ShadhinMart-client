@@ -13,28 +13,27 @@ const Home = () => {
   const [sort, setSort] = useState('');
   const [currentPage, setCurrentPage] = useState(0);
   const [search, setSearch] = useState('');
-  const[hidden,setHidden]=useState(true);
+  const [hidden, setHidden] = useState(true);
   const [isLoading, setLoading] = useState(true);
-  const [isOpen,setOpen]=useState(false)
+  const [isOpen, setOpen] = useState(false);
   const [filters, setFilters] = useState({
     minPrice: 0,
     maxPrice: 1000,
     brands: [],
-    categories: []
+    categories: [],
   });
   const item = 8;
 
-  const handleSearch = (e) => {
+  const handleSearch = e => {
     e.preventDefault();
     const form = e.target;
     setSearch(form.search.value);
     form.search.value = '';
-    document.querySelector('html').setAttribute("data-theme", "dark")
   };
 
-  const handleFilterChange = (newFilters) => {
+  const handleFilterChange = newFilters => {
     setFilters(newFilters);
-    setCurrentPage(0); 
+    setCurrentPage(0);
   };
 
   useEffect(() => {
@@ -56,36 +55,47 @@ const Home = () => {
         setData(res.data);
         setLoading(false);
       });
-    
-    axiosPublic.get('/productcount', {
-      params: {
-        search,
-        minPrice: filters.minPrice,
-        maxPrice: filters.maxPrice,
-        brands: filters.brands.join(','),
-        categories: filters.categories.join(','),
-      },
-    })
-    .then(res => setCount(res.data.count));
 
+    axiosPublic
+      .get('/productcount', {
+        params: {
+          search,
+          minPrice: filters.minPrice,
+          maxPrice: filters.maxPrice,
+          brands: filters.brands.join(','),
+          categories: filters.categories.join(','),
+        },
+      })
+      .then(res => setCount(res.data.count));
   }, [currentPage, item, search, sort, filters]);
 
   const numberOfPages = Math.ceil(count / item);
   const pages = [...Array(numberOfPages).keys()];
 
   return (
-    <main className="bg-[#F5F5F5]">
+    <main className="bg-[#F5F5F5] dark:bg-[#121212]">
       {/* navbar  */}
-      <Navbar setSearch={setSearch} handleSearch={handleSearch} hidden={hidden} setHidden={setHidden} isOpen={isOpen} setOpen={setOpen}/>
+      <Navbar
+        setSearch={setSearch}
+        handleSearch={handleSearch}
+        hidden={hidden}
+        setHidden={setHidden}
+        isOpen={isOpen}
+        setOpen={setOpen}
+      />
       <section className="flex">
         {/* sidebar  */}
-        <Sidebar onFilter={handleFilterChange} isOpen={isOpen} setOpen={setOpen}/>
+        <Sidebar
+          onFilter={handleFilterChange}
+          isOpen={isOpen}
+          setOpen={setOpen}
+        />
         {/* ProductCard  */}
         <div className="flex-1 relative">
           <select
             onChange={e => setSort(e.target.value)}
             value={sort}
-            className='absolute top-[70px] right-10 p-2 rounded font-semibold'
+            className="absolute top-[70px] right-10 p-2 rounded font-semibold dark:bg-blue-600"
           >
             <option value="">Sort by</option>
             <option value="lth">Sort by Low to High price</option>
